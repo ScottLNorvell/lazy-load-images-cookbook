@@ -11,6 +11,8 @@ Here is where we discuss...
 
 First we set up a sweet scroll service.
 ```javascript
+//services/scroll-depth.js
+
 import Ember from 'ember';
 
 var debounceDuration = 30;
@@ -88,6 +90,8 @@ export default Ember.Object.extend(Ember.Evented, {
 
 Then, make it easy to subscribe to with SubscribeToScroll Mixin...
 ```javascript
+//mixins/subscribe-to-scroll.js
+
 import Ember from 'ember';
 
 export default Ember.Mixin.create({
